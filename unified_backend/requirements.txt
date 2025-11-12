@@ -1,0 +1,91 @@
+# Unified Backend Requirements
+# ============================================================================
+# Core Framework & Web Server
+# ============================================================================
+fastapi==0.115.0
+uvicorn==0.30.0
+python-multipart==0.0.6
+
+# ============================================================================
+# Data Validation & Models
+# ============================================================================
+pydantic==2.4.2
+pydantic-settings==2.0.3
+
+# ============================================================================
+# Resume Parsing
+# ============================================================================
+pymupdf==1.23.8              # PDF extraction
+docx2txt==0.8                # DOCX extraction
+requests==2.31.0             # HTTP requests (LinkedIn, GitHub APIs)
+
+# ============================================================================
+# Resume Optimization
+# ============================================================================
+# nltk==3.8.1                # Natural language processing (for ATS scoring)
+# spacy==3.6.1               # Advanced NLP (optional)
+
+# ============================================================================
+# LLM Integration
+# ============================================================================
+# ollama (local LLM integration - installed separately via ollama.ai)
+
+# ============================================================================
+# Interview & Audio Processing
+# ============================================================================
+# librosa==0.10.0            # Audio processing
+# speech_recognition==3.10.0 # Speech-to-text
+# groq==0.4.2                # Groq API (if using for AI scoring)
+
+# ============================================================================
+# RAG & Document Processing (from rag/ module)
+# ============================================================================
+# langchain==0.0.350         # LLM chaining
+# sentence-transformers==2.2.2  # Embeddings
+# pinecone==2.2.2            # Vector DB (optional)
+# chromadb==0.3.21           # Chroma vector DB
+
+# ============================================================================
+# Audio Processing (optional, for interview audio)
+# ============================================================================
+# pydub==0.25.1              # Audio manipulation
+# python-dotenv==1.0.0       # Environment variable management
+
+# ============================================================================
+# Utilities & Helpers
+# ============================================================================
+python-dotenv==1.0.0
+
+# ============================================================================
+# Development & Testing
+# ============================================================================
+pytest==7.4.0
+pytest-asyncio==0.21.1
+httpx==0.25.0
+
+# ============================================================================
+# Optional Dependencies (uncomment as needed)
+# ============================================================================
+# Database
+# sqlalchemy==2.0.0
+# postgresql==1.0.0
+# pymongo==4.5.0
+
+# Monitoring & Logging
+# python-json-logger==2.0.7
+# sentry-sdk==1.35.0
+
+# Security
+# python-jose==3.3.0
+# passlib==1.7.4
+# bcrypt==4.1.0
+# PyJWT==2.8.0
+
+# Rate Limiting
+# slowapi==0.1.9
+
+# Async & Performance
+# aiofiles==23.2.0
+# asyncio==3.4.3
+
+print("Requirements file created successfully!")
